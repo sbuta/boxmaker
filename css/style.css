@@ -1,0 +1,10 @@
+body {
+	margin:5;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	line-height:20px;
+	background-color:#fff}
+.radioLabel {font-size:13px;}
+.radioLabel_disabled {color: #999;}
+.inputdiv {width:500px}
+.inputs {width:150px}

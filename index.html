@@ -1,0 +1,80 @@
+<html>
+<head>
+	<title>Box Maker Website</title>
+	<script type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<H1>Welcome to the Box Maker Website</H1>
+	<p>Inputs</p>
+	<div class="inputdiv"><form id='form1'><table>
+		<tr><td><label for="unitsSelect">Units</label></td>
+		<td><select id="unitsSelect" class="inputs">
+			<option value="inches">Inches</option>
+			<option value="millimeters">Millimeters</option>
+		</select></td>
+		</tr>
+
+		<tr><td><label for="thicknessSelect">Material Thickness</label></td>
+			<td><select id="thicknessSelect" class="inputs">
+				<option value="118">1/8 (0.118")</option>
+				<option value="236">1/4 (0.236")</option>
+				<option value="354">3/8 (0.354")</option>
+				<option value="472">1/2 (0.472")</option>
+				<option value="custom">Custom</option>			
+			</select></td>
+		</tr>
+
+		<tr id="customThicknessRow"><td>&nbsp;</td>
+			<td><input type="text" id="customThickness" class="inputs" value=""/></td>
+		</tr>
+
+		<tr><td><label for="boxTypeSelect">Box Type</label></td>
+			<td><select id="boxTypeSelect" class="inputs">
+				<option value="flush">Flush top and bottom</option>
+				<option value="overlap">Overlap</option>
+			</select></td>
+		</tr>
+
+		<tr><td><label for="insertSelect">Number of Inserts</label></td>
+			<td><select id="insertSelect" class="inputs">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+			</select></td>
+		</tr>
+
+		<tr><td>Insert Spacing</td>
+			<td class="radioLabel" id="insertSpacingButtons">
+				<input type="radio" name="insertSpacing" value="even" checked>Even
+				<input type="radio" name="insertSpacing" value="custom">Custom
+			</td>
+		</tr>
+	
+		<tr><td>Box Dimensions</td>
+			<td  class="radioLabel" id="dimensInOutButtons">
+				<input type="radio" name="dimensInOut" value="outside" checked>Outside
+				<input type="radio" name="dimensInOut" value="inside">Inside
+			</td>
+		</tr>
+		<tr>
+			<td><label for="boxLength">Box Length</label></td>
+			<td><input type="text" id="boxLength" class="inputs" value="2"/></td>
+		</tr>
+		<tr>
+			<td><label for="boxDepth">Box Depth</label></td>
+			<td><input type="text" id="boxDepth" class="inputs" value="8"/></td>
+		</tr>
+		<tr>	
+			<td><label for="boxHeight">Box Height</label></td>
+			<td><input type="text" id="boxHeight" class="inputs" value="4" /></td>
+		</tr>
+	</table></form></div>	
+</body>
